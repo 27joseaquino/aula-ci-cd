@@ -1,18 +1,18 @@
 name: CI
 
-  on :
-    push: 
-      branches: 
-          - master
-    pull_request: 
-      branches: 
-          - master
+on :
+  push: 
+    branches: 
+        - master
+  pull_request: 
+    branches: 
+        - master
 
-  jobs: 
-    build: 
-      - name: 'Build and Push'
-        runs-on: ubuntu-latest
+jobs: 
+  build: 
+    - name: 'Build and Push'
+      runs-on: ubuntu-latest
 
-        steps: 
-          - name: Checkout source code
-            uses: actions/checkout@v4
+      steps: 
+        - name: Checkout source code
+          uses: actions/checkout@v4
