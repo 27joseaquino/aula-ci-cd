@@ -10,9 +10,15 @@ on :
 
 jobs: 
   build: 
-    - name: 'Build and Push'
+      name: 'Build and Push'
       runs-on: ubuntu-latest
 
       steps: 
-        - name: Checkout source code
+       - name: Checkout source code
           uses: actions/checkout@v4
+
+        - name: Setup Nodejs
+          uses: actions/checkout@v4
+          with: 
+            node-version: '22'
+            
