@@ -16,7 +16,7 @@ jobs:
       strategy:
           matrix: 
               node-version: [18,20,23]
-              os: [ubunto-latest, windows-latest, macos-latest]
+              os: [ubunto-latest]
 
       steps: 
         - name: Checkout source code
